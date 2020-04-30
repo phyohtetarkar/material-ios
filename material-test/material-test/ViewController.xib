@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="material_test" customModuleProvider="target">
+            <connections>
+                <outlet property="filledTextField" destination="GDd-uy-px5" id="SQq-Pz-E9L"/>
+                <outlet property="outlineTextField" destination="cFp-XM-M0x" id="i3N-Ek-34Z"/>
+                <outlet property="view" destination="3fq-ka-Bi2" id="dOa-Hk-dJt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3fq-ka-Bi2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zvc-Tc-lLS">
+                    <rect key="frame" x="16" y="68" width="382" height="53"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="text..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDd-uy-px5" customClass="MDCFilledTextField">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="18.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFp-XM-M0x" customClass="MDCOutlinedTextField">
+                            <rect key="frame" x="0.0" y="34.5" width="382" height="18.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="cFp-XM-M0x" firstAttribute="width" secondItem="GDd-uy-px5" secondAttribute="width" id="D7h-zj-5Ti"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="H8u-u8-CPK" firstAttribute="trailing" secondItem="zvc-Tc-lLS" secondAttribute="trailing" constant="16" id="1mK-9Y-0Uc"/>
+                <constraint firstItem="zvc-Tc-lLS" firstAttribute="leading" secondItem="H8u-u8-CPK" secondAttribute="leading" constant="16" id="IBV-Tk-N2O"/>
+                <constraint firstItem="zvc-Tc-lLS" firstAttribute="top" secondItem="H8u-u8-CPK" secondAttribute="top" constant="24" id="de3-aT-smT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="H8u-u8-CPK"/>
+            <point key="canvasLocation" x="425" y="505"/>
+        </view>
+    </objects>
+</document>
